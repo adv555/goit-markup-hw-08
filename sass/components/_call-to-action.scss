@@ -1,0 +1,9 @@
+
+.cta-join {
+  display: block;
+  margin-bottom: 20px;
+  
+  @include font (700, 14px, 16px);
+  text-transform: uppercase;
+  color: var(--white-color);
+}
