@@ -65,13 +65,13 @@
     &__link {
       display: inline-flex;
       align-items: center;
-      color: var(--secondary-text-color);
-      transition: color 250ms var(--cubik), fill 250ms var(--cubik);
+      color: $secondary-text-color;
+      transition: color 250ms $cubik, fill 250ms $cubik;
     
       &:hover,
       &:focus {
-      color: var(--accent-color);
-      fill: var(--accent-color);
+      color: $accent-color;
+      fill: $accent-color;
       }
     }
   
