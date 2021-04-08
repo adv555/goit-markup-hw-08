@@ -1,15 +1,19 @@
 .logo {
-  font-family: var(--secondary-font);
+  font-family: $secondary-font;
 
-  @include font (700, 26px, 31px);
-  color: var(--accent-color);
+  @include font (700, 24px, 28.18px);
+  color: $accent-color;
 
   &_theme {
     &_light {
-    color: var(--black-color);
+    color: $black-color;
     }
     &_dark {
-    color: var(--white-color);
+    color: $white-color;
     }
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include font (700, 26px, 31px); 
   }
 }
