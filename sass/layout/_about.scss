@@ -2,7 +2,10 @@
   padding-top: $section-mob-pb;
   padding-bottom: $section-mob-pb;
   
-  &-list {   
+  &-list {  
+    &__item:not(:last-child) {
+      margin-bottom: 30px;
+    }
     &__icon {
       display: flex;
       align-items: center;
