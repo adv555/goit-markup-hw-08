@@ -632,6 +632,7 @@ img {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/bg-mob.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
+  max-width: 1600px;
 }
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -688,42 +689,30 @@ img {
 }
 
 .about {
-  padding-top: var(--section-pt);
-  padding-bottom: var(--section-pb);
-}
-
-.about-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: calc(-1 * var(--card-gap));
-  margin-top: calc(-1 * var(--card-gap));
-}
-
-.about-list__item {
-  flex-basis: calc(100% / 4 - var(--card-gap));
-  margin-left: var(--card-gap);
-  margin-top: var(--card-gap);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .about-list__icon {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 270px;
+  width: 450px;
   height: 120px;
   margin-bottom: 30px;
-  background-color: var(--body-bg-accent);
+  background-color: #f5f4fa;
   border-radius: 4px;
 }
 
 .about-list__title {
+  text-align: center;
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--primary-text-color);
+  color: #212121;
 }
 
 .about-list__description {
@@ -731,7 +720,42 @@ img {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--secondary-text-color);
+  color: #757575;
+}
+
+@media screen and (min-width: 768px) {
+  .about-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+  .about-list__item {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+  .about-list__icon {
+    width: 354px;
+  }
+  .about-list__title {
+    text-align: unset;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .about-list__item {
+    flex-basis: calc(100% / 4 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+  .about-list__icon {
+    width: 270px;
+  }
 }
 
 .services {
