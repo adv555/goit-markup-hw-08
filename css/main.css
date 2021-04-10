@@ -11,8 +11,8 @@
 }
 
 body {
-  font-family: var(--main-font);
-  background-color: var(--white-color);
+  font-family: "Roboto", sans-serif;
+  background-color: #ffffff;
 }
 
 h1,
@@ -552,25 +552,24 @@ img {
   padding-bottom: 10px;
 }
 
-@media screen and (max-width: 767px) {
-  .menu,
-  .contact-list {
-    display: none;
-  }
+.nav {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.menu,
+.contact-list {
+  display: none;
 }
 
 @media screen and (min-width: 768px) {
   .header {
     padding-top: 21px;
     padding-bottom: 21px;
-  }
-  .nav {
-    display: flex;
-    align-items: center;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
   }
   .nav .logo {
     margin-right: 88px;
@@ -604,7 +603,7 @@ img {
     letter-spacing: 0.02em;
   }
   .contact-list .contact-list__item + .contact-list__item {
-    margin-bottom: 10px;
+    margin-top: 10px;
   }
   .contact-list__item {
     display: flex;
@@ -624,28 +623,24 @@ img {
     margin-right: 10px;
     align-items: center;
     fill: currentColor;
-    transition: color 250ms var(--cubik), fill 250ms var(--cubik);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .contact-list__link:hover .contact-list__icon,
   .contact-list__link:focus .contact-list__icon {
-    color: var(--accent-color);
-    fill: var(--accent-color);
+    color: #2196f3;
+    fill: #2196f3;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .contact-list {
-    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
   }
   .contact-list .contact-list__item + .contact-list__item {
+    margin-top: 0;
     margin-left: 50px;
-  }
-  .contact-list__item {
-    display: flex;
-    text-align: center;
   }
 }
 
