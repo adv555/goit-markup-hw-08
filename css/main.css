@@ -604,7 +604,7 @@ img {
     letter-spacing: 0.02em;
   }
   .contact-list .contact-list__item + .contact-list__item {
-    margin-top: 10px;
+    margin-bottom: 10px;
   }
   .contact-list__item {
     display: flex;
@@ -630,6 +630,22 @@ img {
   .contact-list__link:focus .contact-list__icon {
     color: var(--accent-color);
     fill: var(--accent-color);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .contact-list .contact-list__item + .contact-list__item {
+    margin-left: 50px;
+  }
+  .contact-list__item {
+    display: flex;
+    text-align: center;
   }
 }
 
@@ -889,13 +905,16 @@ img {
 
 .customer-list {
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
   margin-left: -30px;
   margin-top: -30px;
 }
 
 .customer-list__card {
-  flex-basis: calc(100% / 2 - 30px);
+  display: flex;
+  flex-basis: calc(100%/2 -30px);
   margin-left: 30px;
   margin-top: 30px;
 }
@@ -904,7 +923,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
+  width: 210px;
   height: 90px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -923,6 +942,24 @@ img {
 .customer-list__link:hover .customer-list__logo,
 .customer-list__link:focus .customer-list__logo {
   fill: #2196f3;
+}
+
+@media screen and (mix-width: 768px) {
+  .customer-list__card {
+    flex-basis: calc(100/3 -30px);
+  }
+  .customer-list__link {
+    width: 226px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .customer-list {
+    flex-wrap: nowrap;
+  }
+  .customer-list__link {
+    width: 170px;
+  }
 }
 
 .footer {

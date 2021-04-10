@@ -54,9 +54,9 @@
     @include font (500, 12px, 14px, 0.02em);
   
     & .contact-list__item + .contact-list__item {
-    margin-top: 10px;
+    margin-bottom: 10px;
     }
-    
+
     &__item {
       display: flex;
       text-align: center;
@@ -90,6 +90,24 @@
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .contact-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+    & .contact-list__item + .contact-list__item {
+      // margin-top: 0;
+      margin-left: 50px;
+    }
+    
+    &__item {
+      display: flex;
+      text-align: center;
+    }
+  }
+}
 
 // .header {
 //   padding-top: 24px;
