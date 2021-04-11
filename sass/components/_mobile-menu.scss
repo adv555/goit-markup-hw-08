@@ -1,44 +1,116 @@
 @media screen and (max-width:767px) {
     
-    .mobile-menu {
-        position: fixed;
-        top: 0;
-        left: 50%;
-        width: 100vw;
-        max-width: 480px;
-        height: 100vh;
-        padding: 40px 48px;
-        background-color: sandybrown;
-        transform: translateY(-100%) translateX(-50%);
-        transition: transform 250ms $cubik;
+  .mobile-menu {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: fixed;
+      top: 0;
+      left: 50%;
+      width: 100vw;
+      max-width: 480px;
+      height: 100vh;
+      padding: 40px 48px;
+      background-color: $white-color;
+      transform: translateY(-100%) translateX(-50%);
+      transition: transform 250ms $cubik;
+  }
+  
+  .is-open {
+      transform: translateY(0) translateX(-50%);
+  }
+  
+  .menu__burger-btn,
+  .mobile-menu__close-btn {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  }
+  
+  .mobile-menu__close-btn {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+  }
+  
+  .menu__burger-icon,
+  .mobile-menu__close-icon {
+    fill: $black-color;
+    width: 40px;
+    height: 40px;
+    transition: fill 250ms $cubik;
+  }
+
+    .mobile-menu__close-btn:focus .menu__burger-icon,
+    .mobile-menu__close-btn:hover .menu__burger-icon,
+    .mobile-menu__close-btn:focus .mobile-menu__close-icon,
+    .mobile-menu__close-btn:hover .menu__burger-icon {
+      fill: $accent-color;
     }
-    
-    .is-open {
-        transform: translateY(0) translateX(-50%);
+
+  // .mobile-menu__nav {
+  //   @include font (500, 40px, 47px, 00.02em);
+  //   color: $primary-text-color;
+  // }
+
+  .mobile-menu__item,
+  .mobile-menu__contact-item {
+     margin-bottom: 32px;
+  }
+
+  .mobile-menu__link {
+    @include font (500, 40px, 47px, 00.02em);
+    color: $primary-text-color;
+    transition: color 250ms $cubik;
+
+    &:focus,
+    &:hover {
+      color: $accent-color;
     }
-    
-    .menu__burger-btn,
-    .mobile-menu__close-btn {
-      background-color: transparent;
-      border: none;
-      padding: 0;
-      cursor: pointer;
-    //   width: 40px;
-    //   height: 40px;
+  }
+
+  .mobile-menu__contact-list {
+    margin-top: auto;
+    margin-bottom: 64px;
+  }
+
+  .mobile-menu__tel-link {
+    @include font (500, 34px, 40px, 00.02em); 
+    color: $accent-color;
+
+
+  }
+  .mobile-menu__mail-link {
+    @include font (500, 24px, 28px, 00.02em); 
+    color: $secondary-text-color;
+    transition: color 250ms $cubik;
+
+    &:focus,
+    &:hover {
+      color: $accent-color;
     }
-    
-    .mobile-menu__close-btn {
-        position: absolute;
-        top: 10px;
-        right: 15px;
-    }
-    
-    .menu__burger-icon,
-    .mobile-menu__close-icon {
-      fill: $black-color;
-       width: 40px;
-      height: 40px;
-    }
+  }
+
+  .mobile-menu__social-list {
+    display: inline-flex;
+    justify-content: space-between;
+  }
+
+  .mobile-menu__social-link {
+    @include font (500, 18px, 22px, 00.02em);
+    color: $accent-color;
+  }
+  
+.mobile-menu__social-item:not(:last-child)::after {
+  content: '';
+  width: 22px;
+  height: 0px;
+  margin: 0 10px;
+  border: 1px solid rgba(33,33,33,0.2);
+  transform: rotate(90deg);
+}
+
 }
 
 @media screen and (min-width: 768px) {
