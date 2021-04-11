@@ -6,7 +6,7 @@
   &__title {
     margin-bottom: 15px;
     text-align: center;
-    @include font (700, 20px, 23px);
+    @include font (700, 20px, 30px);
     color: $primary-text-color;
   }
   
@@ -74,7 +74,7 @@
     display: flex;
     align-items: center;
   
-    @include font (400, 14px, 24px);
+    @include font (400, 12px, 24px);
     color: $secondary-text-color;
   
     &::before {
@@ -128,6 +128,17 @@
       background-color: #188ce8;
     }
   }
+}
+
+@media screen and (min-width: 1200px) {
+   .modal-form {
+     &__title {
+       @include font (700, 20px, 23px);
+     }
+     &__check-desc {
+       @include font (400, 14px, 24px);
+     }
+ }
 }
 
 
