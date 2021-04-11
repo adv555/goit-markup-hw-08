@@ -7,14 +7,14 @@
     margin-bottom: 15px;
     text-align: center;
     @include font (700, 20px, 23px);
-    color: var(--primary-text-color);
+    color: $primary-text-color;
   }
   
   &__field {
     margin-bottom: 10px;
     
     @include font (400, 12px, 14px, 0.01em);
-    color: var(--secondary-text-color);
+    color: $secondary-text-color;
   }
   
   &__input {
@@ -23,11 +23,11 @@
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    transition: border-color 250ms var(--cubik);
+    transition: border-color 250ms $cubik;
     
     &:focus {
       outline: none;
-      border-color: var(--accent-color);
+      border-color: $accent-color;
     }
 
     &-wrapper {
@@ -42,10 +42,10 @@
       left: 12px;
       cursor: pointer;
       transform: translateY(-50%);
-      transition: fill 250ms var(--cubik);
+      transition: fill 250ms $cubik;
     
       .modal-form__input:focus + & {
-        fill: var(--accent-color);
+        fill: $accent-color;
       }
     }
   }
@@ -57,11 +57,11 @@
     resize: none;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    transition: border-color 250ms var(--cubik);
+    transition: border-color 250ms $cubik;
   
     &:focus {
       outline: none;
-      border-color: var(--accent-color);
+      border-color: $accent-color;
     }
   
     &::placeholder {
@@ -75,7 +75,7 @@
     align-items: center;
   
     @include font (400, 14px, 24px);
-    color: var(--secondary-text-color);
+    color: $secondary-text-color;
   
     &::before {
       display: block;
@@ -83,27 +83,27 @@
       width: 16px;
       height: 15px;
       margin-right: 8px;
-      border: 2px solid var(--primary-text-color);
+      border: 2px solid $primary-text-color;
       border-radius: 2px;
       cursor: pointer;
-      transition: border-color 250ms var(--cubik);
+      transition: border-color 250ms $cubik;
       
       .modal-form__term:focus + & {
-        border-color: var(--accent-color);
+        border-color: $accent-color;
       }
     
       .modal-form__term:checked + & {
-        background-image: url(../images/modal/icon-check.svg);
+        background-image: url("../images/modal/icon-check.svg");
         background-origin: border-box;
         border: transparent;
         border-radius: 2px;
-        background-color: var(--accent-color);
+        background-color: $accent-color;
       }
     }
   }
   
   &__term-link {
-    color: var(--accent-color);
+    color: $accent-color;
   }
   
   &__btn {
@@ -113,15 +113,15 @@
     margin-top: 30px;
   
     @include font (700, 16px, 30px, 0.06em);
-    color: var(--white-color);
+    color: $white-color;
   
-    background: var(--accent-color);
+    background: $accent-color;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     outline: none;
     border: none;
     border-radius: 4px;
   
-    transition: background-color 250ms var(--cubik);
+    transition: background-color 250ms $cubik;
   
     &:hover,
     &:focus {

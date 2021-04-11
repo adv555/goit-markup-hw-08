@@ -1,8 +1,9 @@
 .footer {
-  margin: 0 auto;
+  // margin: 0 auto;
   padding-top: 60px;
   padding-bottom: 60px;
-  background: var(--body-bg-dark);
+  background: $body-bg-dark;
+  text-align: center;
 }
 
 .address {
@@ -11,14 +12,14 @@
 }
 
 .address-list {
-  margin-bottom: -9px;
+  margin-bottom: 60px;
   
   &__item {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
   }
   
   &__link {
-    color: var(--white-color);
+    color: $white-color;
   }
   
   &__contact-link {
@@ -27,13 +28,72 @@
 }
 
 .social {
-  margin-left: 70px;
-}
-/* call-to-action in components */
-/* social-list in components */
+    margin-bottom: 60px;
+  }
 
-.signup {
-  margin-left: 93px;
+@media screen and (min-width: 768px) {
+  
 }
-/* call-to-action in components */
-/* signup-form in components */
+
+@media screen and (min-width: 1200px) {
+  .address-list {
+    margin-bottom: -9px;
+  
+    &__item {
+      margin-bottom: 9px;
+    }
+  }
+    .social {
+    margin-left: 70px;
+  }
+  /* call-to-action in components */
+  /* social-list in components */
+
+  .signup {
+    margin-left: 93px;
+  }
+  /* call-to-action in components */
+  /* signup-form in components */
+}
+
+
+
+// .footer {
+//   margin: 0 auto;
+//   padding-top: 60px;
+//   padding-bottom: 60px;
+//   background: var(--body-bg-dark);
+// }
+
+// .address {
+//   margin-top: 20px;
+//   @include font (400, 14px, 24px);
+// }
+
+// .address-list {
+//   margin-bottom: -9px;
+  
+//   &__item {
+//     margin-bottom: 9px;
+//   }
+  
+//   &__link {
+//     color: var(--white-color);
+//   }
+  
+//   &__contact-link {
+//     color: rgba(255, 255, 255, 0.6);
+//   }
+// }
+
+// .social {
+//   margin-left: 70px;
+// }
+// /* call-to-action in components */
+// /* social-list in components */
+
+// .signup {
+//   margin-left: 93px;
+// }
+// /* call-to-action in components */
+// /* signup-form in components */

@@ -5,7 +5,7 @@
   transform: translate(-50%, -50%);
   width: 528px;
   height: 581px;
-  background-color: var(--white-color);
+  background-color: $white-color;
   
   &__close-btn {
     position: absolute;
@@ -13,7 +13,7 @@
     right: 8px;
     width: 30px;
     height: 30px;
-    background: var(--white-color);
+    background: $white-color;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     cursor: pointer;
@@ -23,11 +23,11 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      transition: fill 250ms var(--cubik);
+      transition: fill 250ms $cubik;
       
       .modal__close-btn:focus &,
       .modal__close-btn:hover & {
-        fill: var(--accent-color);
+        fill: $accent-color;
       }
     }
   }

@@ -6,6 +6,6 @@
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.2);
 
-  transition: opacity 250ms var(--cubik), transform 250ms var(--cubik),
-    visibility 250ms var(--cubik);
+  transition: opacity 250ms $cubik, transform 250ms var(--cubik),
+    visibility 250ms $cubik;
 }
