@@ -143,33 +143,42 @@ img {
   .is-open {
     transform: translateY(0) translateX(-50%);
   }
-  .menu__burger-btn,
-  .mobile-menu__close-btn {
+  .menu__burger-btn {
     background-color: transparent;
     border: none;
     padding: 0;
     cursor: pointer;
   }
-  .mobile-menu__close-btn {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-  }
-  .menu__burger-icon,
-  .mobile-menu__close-icon {
+  .menu__burger-icon {
     fill: #000000;
     width: 40px;
     height: 40px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .mobile-menu__close-btn:focus .menu__burger-icon,
-  .mobile-menu__close-btn:hover .menu__burger-icon,
-  .mobile-menu__close-btn:focus .mobile-menu__close-icon,
   .mobile-menu__close-btn:hover .menu__burger-icon {
     fill: #2196f3;
   }
-  .mobile-menu__item,
-  .mobile-menu__contact-item {
+  .mobile-menu__close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  }
+  .mobile-menu__close-icon {
+    fill: #000000;
+    width: 40px;
+    height: 40px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .mobile-menu__close-btn:focus .mobile-menu__close-icon,
+  .mobile-menu__close-btn:hover .mobile-menu__close-icon {
+    fill: #2196f3;
+  }
+  .mobile-menu__item, .mobile-menu__contact-item {
     margin-bottom: 32px;
   }
   .mobile-menu__link {

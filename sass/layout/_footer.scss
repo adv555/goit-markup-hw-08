@@ -1,5 +1,4 @@
 .footer {
-  // margin: 0 auto;
   padding-top: 60px;
   padding-bottom: 60px;
   background: $body-bg-dark;
@@ -55,45 +54,3 @@
   /* call-to-action in components */
   /* signup-form in components */
 }
-
-
-
-// .footer {
-//   margin: 0 auto;
-//   padding-top: 60px;
-//   padding-bottom: 60px;
-//   background: var(--body-bg-dark);
-// }
-
-// .address {
-//   margin-top: 20px;
-//   @include font (400, 14px, 24px);
-// }
-
-// .address-list {
-//   margin-bottom: -9px;
-  
-//   &__item {
-//     margin-bottom: 9px;
-//   }
-  
-//   &__link {
-//     color: var(--white-color);
-//   }
-  
-//   &__contact-link {
-//     color: rgba(255, 255, 255, 0.6);
-//   }
-// }
-
-// .social {
-//   margin-left: 70px;
-// }
-// /* call-to-action in components */
-// /* social-list in components */
-
-// .signup {
-//   margin-left: 93px;
-// }
-// /* call-to-action in components */
-// /* signup-form in components */
