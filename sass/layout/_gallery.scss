@@ -1,6 +1,7 @@
 .gallery {
   padding-top: $section-mob-pt;
   padding-bottom: $section-mob-pb;
+  min-width: 480px;
   
   &-list {
     display: flex;

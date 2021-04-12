@@ -663,6 +663,7 @@ img {
   padding-top: 10px;
   padding-bottom: 10px;
   border-bottom: 1px solid #ececec;
+  min-width: 480px;
 }
 
 .nav {
@@ -826,6 +827,7 @@ img {
 .about {
   padding-top: 60px;
   padding-bottom: 60px;
+  min-width: 480px;
 }
 
 .about-list__item:not(:last-child) {
@@ -943,9 +945,15 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #f5f4fa;
+  min-width: 480px;
+}
+
+.team-list {
+  margin-bottom: -30px;
 }
 
 .team-list__card {
+  margin-bottom: 30px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
@@ -985,6 +993,7 @@ img {
     flex-basis: calc(100% / 2 - 30px);
     margin-left: 30px;
     margin-top: 30px;
+    margin-bottom: 0;
   }
   .team-list__card-content {
     padding-bottom: 30px;
@@ -1010,6 +1019,7 @@ img {
 .customers {
   padding-top: 60px;
   padding-bottom: 60px;
+  min-width: 480px;
 }
 
 .customer-list {
@@ -1076,6 +1086,7 @@ img {
   padding-bottom: 60px;
   background: #2f303a;
   text-align: center;
+  min-width: 480px;
 }
 
 .address {
@@ -1128,6 +1139,7 @@ img {
 .gallery {
   padding-top: 60px;
   padding-bottom: 60px;
+  min-width: 480px;
 }
 
 .gallery-list {

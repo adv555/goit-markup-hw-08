@@ -2,11 +2,14 @@
   padding-top: $section-mob-pt;
   padding-bottom: $section-mob-pb;
   background-color: $body-bg-accent;
+  min-width: 480px;
 }
 
 .team-list {
+  margin-bottom: -30px;
   
   &__card {
+    margin-bottom: $card-gap;
     @include font (400, 16px, 19px);
     text-align: center;
     background-color: $white-color;
@@ -45,6 +48,7 @@
       flex-basis: calc(100% / 2 - 30px);
       margin-left: $card-gap;
       margin-top: $card-gap;
+      margin-bottom: 0;
       
       &-content {
         padding-bottom: $card-gap;
