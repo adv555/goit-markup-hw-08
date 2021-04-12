@@ -670,7 +670,6 @@ img {
   padding-top: 10px;
   padding-bottom: 10px;
   border-bottom: 1px solid #ececec;
-  min-width: 480px;
 }
 
 .nav {
@@ -854,7 +853,6 @@ img {
 .about {
   padding-top: 60px;
   padding-bottom: 60px;
-  min-width: 480px;
 }
 
 .about-list__item:not(:last-child) {
@@ -972,7 +970,6 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #f5f4fa;
-  min-width: 480px;
 }
 
 .team-list {
@@ -1046,7 +1043,6 @@ img {
 .customers {
   padding-top: 60px;
   padding-bottom: 60px;
-  min-width: 480px;
 }
 
 .customer-list {
@@ -1109,11 +1105,13 @@ img {
 }
 
 .footer {
+  margin: 0 auto;
   padding-top: 60px;
   padding-bottom: 60px;
   background: #2f303a;
   text-align: center;
   min-width: 480px;
+  max-width: 1600px;
 }
 
 .address {
@@ -1166,7 +1164,6 @@ img {
 .gallery {
   padding-top: 60px;
   padding-bottom: 60px;
-  min-width: 480px;
 }
 
 .gallery-list {
