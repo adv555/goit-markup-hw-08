@@ -12,9 +12,8 @@
 }
 
 .gallery-list__card {
-  flex-basis: calc(100% / 1 - 30px);
+  // flex-basis: calc(100% / 1 - 30px);
   margin-left: $card-gap;
-  
   margin-top: $card-gap;
   border: 0;
   background-color: $white-color;
@@ -70,7 +69,7 @@
   }
 }
 
-@media screen and (min-width: 786px) {
+@media screen and (min-width: 768px) {
   .gallery-list {
     display: flex;
     flex-wrap: wrap;
