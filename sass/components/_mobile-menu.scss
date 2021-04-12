@@ -12,6 +12,7 @@
       height: 100vh;
       padding: 40px 48px;
       background-color: $white-color;
+      z-index: 1;
       transform: translateY(-1000%) translateX(-50%);
       transition: transform 250ms $cubik;
   }
