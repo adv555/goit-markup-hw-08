@@ -967,9 +967,12 @@ img {
 }
 
 .team {
+  margin: 0 auto;
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #f5f4fa;
+  min-width: 480px;
+  max-width: 1600px;
 }
 
 .team-list {
