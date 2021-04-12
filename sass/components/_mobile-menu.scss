@@ -1,10 +1,10 @@
 @media screen and (max-width:767px) {
     
   .mobile-menu {
+      position: fixed;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      position: fixed;
       top: 0;
       left: 50%;
       width: 100vw;
@@ -12,7 +12,7 @@
       height: 100vh;
       padding: 40px 48px;
       background-color: $white-color;
-      transform: translateY(-100%) translateX(-50%);
+      transform: translateY(-1000%) translateX(-50%);
       transition: transform 250ms $cubik;
   }
   
