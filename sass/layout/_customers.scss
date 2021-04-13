@@ -58,6 +58,11 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .customers {
+    padding-top: $section-pt;
+    padding-bottom: $section-pb;
+  }
+
   .customer-list {
     flex-wrap: nowrap;
     &__link {

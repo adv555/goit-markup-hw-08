@@ -1,6 +1,7 @@
 .filter-list {
   display: flex;
   flex-wrap: wrap;
+  margin-top: -15px;
   margin-left: -8px;
   margin-bottom: 40px;
 
@@ -32,5 +33,10 @@
   
   @media screen and (min-width: 786px) {
     justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+      margin-bottom: 50px;
   }
 }
