@@ -1043,6 +1043,9 @@ img {
   .team-list__card {
     flex-basis: calc(100% / 4 - 30px);
   }
+  .team-list__card:not(:last-child) {
+    margin-bottom: unset;
+  }
   .team-list__card-content {
     padding-left: 32px;
     padding-right: 32px;
