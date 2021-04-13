@@ -52,7 +52,11 @@
       flex-basis: calc(100% / 2 - 30px);
       margin-left: $card-gap;
       margin-top: $card-gap;
-      margin-bottom: 0;
+      // margin-bottom: 0;
+      
+      &:not(:last-child) {
+        margin-bottom: unset;
+      }
       
       &-content {
         padding-bottom: $card-gap;
@@ -72,9 +76,6 @@
   .team-list {
     &__card {
       flex-basis: calc(100% / 4 - 30px);
-      &:not(:last-child) {
-        margin-bottom: unset;
-      }
       
       &-content {
         padding-left: 32px;
